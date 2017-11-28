@@ -1,5 +1,6 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
+root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
 carpentry: "lc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
 venue: "OpenRefine Workshop for KU Libraries"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "Watson Library Room 419, 1425 Jayhawk Boulevard, Lawrence, KS 66045"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
