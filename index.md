@@ -46,10 +46,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </iframe>
 {% endif %}
 
+<!--
 <h4>This is the workshop template. Delete these lines and use it to customize your own website.
 If you are running a self-organized workshop or have not put in a workshop request yet, please also fill in
 <a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know about your workshop
 and our administrator may contact you if we need any extra information.</h4>
+-->
 
 <h2 id="general">General Information</h2>
 
@@ -119,14 +121,13 @@ and our administrator may contact you if we need any extra information.</h4>
   Modify the block below if there are any special requirements.
 -->
 <p id="requirements">
-  <strong>Equipment:</strong> Participants will be using OpenRefine installed on Watson 419 computers running Windows 10. To install OpenRefine on a personal computer, follow the instructions (listed
-  <a href="#setup">below</a>). Participants are also required to abide by
+  <strong>Equipment:</strong> Participants will be using OpenRefine installed on Watson 419 computers running Windows 10. To install OpenRefine on a personal computer, follow the instructions <a href="#setup">below</a>. Participants are also required to abide by
   {% if page.carpentry == "swc" %}
   Software Carpentry's
   {% elsif page.carpentry == "dc" %}
   Data Carpentry's
   {% elsif page.carpentry == "lc" %}
-  Library Carpentry's
+  The Carpentries'
   {% endif %}
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
@@ -250,18 +251,18 @@ and our administrator may contact you if we need any extra information.</h4>
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<!--
-<h2 id="syllabus">Syllabus</h2>
+
+<!--<h2 id="syllabus">Syllabus</h2>-->
 
 {% if page.carpentry == "swc" %}
   {% include sc/syllabus.html %}
 {% elsif page.carpentry == "dc" %}
   {% include dc/syllabus.html %}
-{% elsif page.carpentry == "lc" %}
+<!--{% elsif page.carpentry == "lc" %}
   {% include lc/syllabus.html %}
-{% endif %}
--->
-<hr/>
+{% endif %}-->
+
+<!--<hr/>-->
 
 <!--
   SETUP
@@ -277,7 +278,7 @@ and our administrator may contact you if we need any extra information.</h4>
 
 <h2 id="setup">Setup</h2>
 
-<p>
+<!--<p>
   To participate in a
   {% if page.carpentry == "swc" %}
   Software Carpentry
@@ -289,6 +290,9 @@ and our administrator may contact you if we need any extra information.</h4>
   workshop,
   you will need access to the software described below.
   In addition, you will need an up-to-date web browser.
+</p>-->
+<p>
+  To install OpenRefine on a personal computer, follow the instructions described below. For installation on your work computer, you may need to arrange Windows administrative permission with your supervisor.
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
