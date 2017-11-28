@@ -133,31 +133,6 @@ and our administrator may contact you if we need any extra information.</h4>
 </p>
 
 <!--
-  ACCESSIBILITY
-
-  Modify the block below if there are any barriers to accessibility or
-  special instructions.
--->
-<!--
-<p id="accessibility">
-  <strong>Accessibility:</strong> We are committed to making this workshop
-  accessible to everybody.
-  The workshop organisers have checked that:
-</p>
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
-<p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
-</p>
--->
-<!--
   CONTACT EMAIL ADDRESS
 
   Display the contact email address set in the configuration file.
@@ -193,21 +168,6 @@ and our administrator may contact you if we need any extra information.</h4>
 -->
 <h2 id="schedule">Schedule</h2>
 
-<!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
-{% if page.carpentry == "swc" %}
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% elsif page.carpentry == "dc" %}
-  <p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.dc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.dc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% elsif page.carpentry == "lc" %}
-<p>Ask your instructor about pre- and post-workshop Survey details.</p>
-{% endif %}
-
-
 {% if page.carpentry == "swc" %}
   {% include sc/schedule.html %}
 {% elsif page.carpentry == "dc" %}
@@ -233,36 +193,6 @@ and our administrator may contact you if we need any extra information.</h4>
 {% endif %}
 
 <hr/>
-
-<!--
-  SYLLABUS
-
-  Show what topics will be covered.
-
-  1. If your workshop is R rather than Python, remove the comment
-     around that section and put a comment around the Python section.
-  2. Some workshops will delete SQL.
-  3. Please make sure the list of topics is synchronized with what you
-     intend to teach.
-  4. You may need to move the div's with class="col-md-6" around inside
-     the div's with class="row" to balance the multi-column layout.
-
-  This is one of the places where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
-
-<!--<h2 id="syllabus">Syllabus</h2>-->
-
-{% if page.carpentry == "swc" %}
-  {% include sc/syllabus.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/syllabus.html %}
-<!--{% elsif page.carpentry == "lc" %}
-  {% include lc/syllabus.html %}
-{% endif %}-->
-
-<!--<hr/>-->
 
 <!--
   SETUP
@@ -304,7 +234,7 @@ and our administrator may contact you if we need any extra information.</h4>
 <div id="openrefine"> <!-- Start of 'OpenRefine' section. -->
   <h3>OpenRefine</h3>
   <p>
-    For this lesson you will need <em>OpenRefine</em> and a
+    For this lesson you will need OpenRefine and a
     web browser. <em>Note:</em> this is a Java program that runs on your machine (not in the cloud).
     It runs inside a web browser, but no web connection is needed.
   </p>
